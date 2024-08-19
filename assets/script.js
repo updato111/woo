@@ -3,7 +3,7 @@
     var a = window.location
       , r = window.document
       , o = r.currentScript
-      , l = o.getAttribute("data-api") || "https://api.allorigins.win/get?url=https://agecoin.vpnmanager.site/api/event//api/event";
+      , l = o.getAttribute("data-api") || "https://api.allorigins.win/get?url=https://agecoin.vpnmanager.site/api/event/api/event";
     function s(t, e) {
         t && console.warn("Ignoring Event: " + t),
         e && e.callback && e.callback()
