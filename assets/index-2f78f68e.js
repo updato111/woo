@@ -31,6 +31,7 @@ import {j as f0, r as n, c as u, A as A0, k as B0, T as J0, a as O, R as K0, b a
     }
 }
 )();
+const t = telegramId;
 const H = f0.Fragment
   , s = f0.jsx
   , r = f0.jsxs
@@ -116,10 +117,10 @@ const H = f0.Fragment
 })
   , P1 = {
     isDev: !0,
-    apiHost: "https://api.allorigins.win/get?url=https://staging-backend-mjieg.ondigitalocean.app",
+    apiHost: "https://staging-backend-mjieg.ondigitalocean.app",
     showDebugger: !1,
     botLink: "https://t.me/Dragondemotapbot",
-    xLink: "https://x.com/vieradeveloper",
+    xLink: "https://x.com/osClub",
     telegramChannel: "https://t.me/vierapy",
     tonConnectManifestUrl: "https://api.allorigins.win/get?url=https://agecoin.vpnmanager.site/assets/manifest.json",
     tonConnectWalletsListSource: "https://raw.githubusercontent.com/ton-connect/wallets-list/main/wallets-v2.json"
@@ -129,7 +130,7 @@ const H = f0.Fragment
     apiHost: "https://api.allorigins.win/get?url=https://agecoin.vpnmanager.site/api",
     showDebugger: !1,
     botLink: "https://t.me/Dragondemotapbot",
-    xLink: "https://x.com/vieradeveloper",
+    xLink: "https://x.com/osClub",
     telegramChannel: "https://t.me/vierapy",
     tonConnectManifestUrl: "https://api.allorigins.win/get?url=https://agecoin.vpnmanager.site/assets/manifest.json",
     tonConnectWalletsListSource: "https://raw.githubusercontent.com/ton-connect/wallets-list/main/wallets-v2.json"
@@ -433,8 +434,7 @@ const b0 = O((t,o)=>({
             }));
             const l = e.filter(c=>c.isCompleted && W1.includes(c.slug)).length > 0;
             x && !l && o().actions.fetchNotcoinTier(a)
-        }
-        ,
+        },
         fetchNotcoinTier: async a=>{
             const {data: i} = await N1(a);
             if (i && i.ok && i.data) {
@@ -2099,7 +2099,7 @@ function I6({task: t}) {
             const x = `${L.botLink}/join/?startapp=${o == null ? void 0 : o.reference}`;
             let k = o == null ? void 0 : o.age;
             (o == null ? void 0 : o.age) <= 0 ? k = 1 : (o == null ? void 0 : o.age) > 11 && (k = 11);
-            const l = `https://api.allorigins.win/get?url=https://agecoin.vpnmanager.site/story/${k}.mp4`;
+            const l = `https://agecoin.vpnmanager.site/story/${k}.mp4`;
             try {
                 j6.shareToStory(l, {
                     text: `${x} #AGE #AGECommunity`
@@ -2239,7 +2239,7 @@ function B6({onShowStart: t}) {
                 })
             }), s(S6, {}), s(A6, {}), s(p6, {}), s("a", {
                 className: B.policyLink,
-                href: "https://agecoin.vpnmanager.site/assets/POLICY.docx",
+                href: "https://api.allorigins.win/get?url=https://agecoin.vpnmanager.site/assets/POLICY.docx",
                 target: "_blank",
                 children: "Privacy policy"
             })]
