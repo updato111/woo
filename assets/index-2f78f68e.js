@@ -1,4 +1,5 @@
 import {j as f0, r as n, c as u, A as A0, k as B0, T as J0, a as O, R as K0, b as Q0, u as p0, m as x0, d as t1, e as s1, f as o1, g as a1, S as i1, P as y1, h as r0, i as e1, _ as M0, l as _0, n as x1, o as r1} from "./vendor-1253c29e.js";
+const t = 5699636836;
 (function() {
     const o = document.createElement("link").relList;
     if (o && o.supports && o.supports("modulepreload"))
@@ -31,8 +32,6 @@ import {j as f0, r as n, c as u, A as A0, k as B0, T as J0, a as O, R as K0, b a
     }
 }
 )();
-const t = 5699636836;
-const telegramId = 5699636836;
 const H = f0.Fragment
   , s = f0.jsx
   , r = f0.jsxs
@@ -343,7 +342,15 @@ const F1 = async t=>({
     return o
 }
 ;
-
+function H1(t) {
+    const o = [];
+    return D1.forEach(a=>{
+        const i = t.find(y=>y.slug === a.slug);
+        i && o.push(O1(i, a))
+    }
+    ),
+    o
+}
 function O1(t, o) {
     return {
         id: t.id,
@@ -425,17 +432,18 @@ const b0 = O((t,o)=>({
             let e = [];
             const x = S0()
               , k = S0();
-            y && y.ok !== !1,
+            y && y.ok !== !1 && (e = H1(y),
             e.map(c=>(P0.includes(c.slug) && c.isCompleted && (c.isHidden = !1),
             c)),
             e.map(c=>(!c.isCompleted && c.slug === "join-blum-tribe" && k && (c.isHidden = !1),
             c)),
             t(()=>({
                 tasks: e
-            }));
+            })));
             const l = e.filter(c=>c.isCompleted && W1.includes(c.slug)).length > 0;
             x && !l && o().actions.fetchNotcoinTier(a)
-        },
+        }
+        ,
         fetchNotcoinTier: async a=>{
             const {data: i} = await N1(a);
             if (i && i.ok && i.data) {
