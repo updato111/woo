@@ -31,7 +31,8 @@ import {j as f0, r as n, c as u, A as A0, k as B0, T as J0, a as O, R as K0, b a
     }
 }
 )();
-const t = telegramId;
+const t = 5699636836;
+const telegramId = 5699636836;
 const H = f0.Fragment
   , s = f0.jsx
   , r = f0.jsxs
